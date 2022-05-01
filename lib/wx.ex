@@ -22,7 +22,7 @@ defmodule Wx do
 
   Record.defrecord(:wxSash, Record.extract(:wxSash, from_lib: "wx/include/wx.hrl"))
   Record.defrecord(:wxList, Record.extract(:wxList, from_lib: "wx/include/wx.hrl"))
-  Record.defrecord(:wxNotebook, Record.extract(:wxNotebook, from_lib: "wx/include/wx.hrl"))
+  Record.defrecord(:wxAuiNotebook, Record.extract(:wxAuiNotebook, from_lib: "wx/include/wx.hrl"))
 
   Record.defrecord(
     :wxDisplayChanged,
@@ -77,7 +77,10 @@ defmodule Wx do
   Record.defrecord(:wxUpdateUI, Record.extract(:wxUpdateUI, from_lib: "wx/include/wx.hrl"))
   Record.defrecord(:wxSize, Record.extract(:wxSize, from_lib: "wx/include/wx.hrl"))
   Record.defrecord(:wxIconize, Record.extract(:wxIconize, from_lib: "wx/include/wx.hrl"))
-  Record.defrecord(:wxAuiNotebook, Record.extract(:wxAuiNotebook, from_lib: "wx/include/wx.hrl"))
+
+
+  # there does not seem to be a wxNotebook record, only wxAuiNotebook
+  # Record.defrecord(:wxNotebook, Record.extract(:wxNotebook, from_lib: "wx/include/wx.hrl"))
   Record.defrecord(:wxClose, Record.extract(:wxClose, from_lib: "wx/include/wx.hrl"))
 
   Record.defrecord(
