@@ -3,7 +3,7 @@ defmodule WxDemo.MixProject do
 
   def project do
     [
-      app: :wx_defintions,
+      app: :wx_definitions,
       version: "0.1.0",
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
@@ -14,7 +14,7 @@ defmodule WxDemo.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :wx, :wxNotebook]
+      extra_applications: [:logger]
     ]
   end
 
